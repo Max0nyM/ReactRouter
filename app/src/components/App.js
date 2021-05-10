@@ -1,5 +1,5 @@
 import { Navbar, Nav } from 'react-bootstrap'
-import Lectures from './GetLectures'
+import Lectures from './GetTheoryList'
 import Home from './Home'
 import {
   BrowserRouter as Router,
@@ -9,8 +9,9 @@ import {
   useParams,
   useRouteMatch,
 } from 'react-router-dom'
-import GetLectures from './GetLectures'
-import CreateLectures from './CreateLectures'
+import GetTheoryList from './GetTheoryList'
+import CreateTheory from './CreateTheory'
+import EditTheory from './EditTheory'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/lectures">Lectures</Nav.Link>
+              <Nav.Link href="/theory">Theory</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -31,11 +32,14 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/lectures">
-            <GetLectures />
+          <Route exact path="/theory">
+            <GetTheoryList />
           </Route>
-          <Route exact path="/lectures/create">
-            <CreateLectures />
+          <Route exact path="/theory/create">
+            <CreateTheory />
+          </Route>
+          <Route exact path="/theory/:id">
+            <EditTheory />
           </Route>
         </Switch>
       </div>

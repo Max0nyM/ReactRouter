@@ -1,6 +1,6 @@
 import { Container, Col, Row, Button, Table, Form } from 'react-bootstrap'
 
-export default function CreateLectures() {
+export default function CreateTheory() {
   return (
     <div>
       <Form>
