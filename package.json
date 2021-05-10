@@ -1,0 +1,24 @@
+{
+  "name": "reactrouter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max0nyM/ReactRouter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Max0nyM/ReactRouter/issues"
+  },
+  "homepage": "https://github.com/Max0nyM/ReactRouter#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.0",
+    "react-bootstrap": "^1.5.2"
+  }
+}
